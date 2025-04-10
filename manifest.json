@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Push to Sheets",
+  "description": "Push data to google sheets for marketing purposes",
+  "version": "1.1",
+  "permissions": ["contextMenus", "storage", "scripting", "activeTab", "notifications"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "push-to-sheet": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Y"
+      },
+      "description": "Push data to Google Sheet"
+    }
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  }
+}
